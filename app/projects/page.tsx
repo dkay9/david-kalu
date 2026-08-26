@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import Footer from "@/components/Footer";
@@ -5,7 +6,7 @@ import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Projects — DK.DEV",
-  description: "Products, client work and open source by DK.",
+  description: "Software, visual media, AI, and client work by DK.",
 };
 
 export default function ProjectsPage() {
@@ -22,13 +23,15 @@ export default function ProjectsPage() {
             <span className="outline-text">Projects</span>
           </h1>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-smoke">
-            Products I&apos;ve founded, client work under BuildItt, and things
-            built in the open. Filter by type below.
+            Software products, visual media, AI experiments, and client
+            work — everything I&apos;ve built and created. Filter by world below.
           </p>
         </Reveal>
       </section>
 
-      <ProjectsGrid />
+      <Suspense>
+        <ProjectsGrid />
+      </Suspense>
       <Footer />
     </main>
   );

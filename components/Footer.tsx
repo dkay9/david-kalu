@@ -25,7 +25,7 @@ export default function Footer() {
       <Reveal>
         <p className="timecode mb-6 flex items-center gap-2 text-paper/60">
           <span className="size-2 rounded-full bg-rec animate-blink" />
-          // 04 — end of file
+          // 05 — end of file
         </p>
         <h2 className="display text-[clamp(3.5rem,14vw,11rem)]">
           <span className="block headline-fade-inverse">Let&apos;s</span>
@@ -54,7 +54,7 @@ export default function Footer() {
 
       <div className="mt-20 flex flex-wrap items-center justify-between gap-4 border-t border-paper/15 pt-6">
         <p className="timecode text-paper/50">
-          © {new Date().getFullYear()} DK.DEV — a BuildItt studio
+          © {new Date().getFullYear()} DK.DEV — Creative Technologist
         </p>
         <p className="timecode text-paper/50">Designed &amp; built by DK</p>
       </div>

@@ -2,20 +2,21 @@ import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 const services = [
-  { n: "1", title: "Web Applications", note: "Next.js · full-stack" },
+  { n: "1", title: "Web Applications", note: "Next.js · full-stack · PWAs" },
   { n: "2", title: "Frontend Engineering", note: "React · TypeScript · Tailwind" },
-  { n: "3", title: "Product Design", note: "UI/UX · design systems" },
-  { n: "4", title: "PWAs & Mobile Web", note: "Offline-first experiences" },
-  { n: "5", title: "APIs & Integrations", note: "REST · auth · databases" },
+  { n: "3", title: "Photography", note: "Brand · portrait · event" },
+  { n: "4", title: "Videography", note: "Content · reels · storytelling" },
+  { n: "5", title: "AI & Automation", note: "LLMs · agents · intelligent tools" },
+  { n: "6", title: "Product Design", note: "UI/UX · design systems" },
 ];
 
 export default function Services() {
   return (
     <section className="border-t border-ink px-5 py-20 sm:px-10 lg:px-16 lg:py-28">
       <Reveal className="mb-12">
-        <p className="timecode mb-3 text-rec">// 03 — services</p>
+        <p className="timecode mb-3 text-rec">// 04 — capabilities</p>
         <h2 className="display text-5xl sm:text-7xl">
-          What I <span className="outline-text">Build</span>
+          What I <span className="outline-text">Do</span>
         </h2>
       </Reveal>
 

@@ -1,11 +1,11 @@
 const words = [
-  "Full-stack",
-  "Frontend",
+  "Software",
+  "Photography",
+  "Videography",
   "Next.js",
+  "AI",
+  "Visual Media",
   "TypeScript",
-  "PWAs",
-  "Product design",
-  "APIs",
 ];
 
 export default function Marquee() {

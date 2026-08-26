@@ -2,7 +2,7 @@ export interface Project {
   slug: string;
   title: string;
   description: string;
-  category: "Product" | "Client work" | "Open source";
+  category: "Product" | "Client work" | "Open source" | "Visual Media" | "AI";
   tools: string[];
   /** Screenshot inside /public — e.g. "/projects/definam.png" */
   image: string;
@@ -21,6 +21,7 @@ export interface Project {
  * 2. Add an entry below. wide: true makes the card span 2 columns.
  */
 export const projects: Project[] = [
+  // ——— Software ———
   {
     slug: "definam",
     title: "DefinAm",
@@ -83,7 +84,57 @@ export const projects: Project[] = [
     image: "/projects/tradebridge.svg",
     year: "2025",
   },
+
+  // ——— Visual Media (placeholders — swap images when ready) ———
+  {
+    slug: "brand-portraits",
+    title: "Brand Portraits",
+    description:
+      "Portrait and headshot sessions for founders, creatives, and professionals — natural light, editorial grade.",
+    category: "Visual Media",
+    tools: ["Photography", "Lightroom", "Portraiture"],
+    image: "/projects/placeholder-photo.svg",
+    year: "2025",
+    wide: true,
+  },
+  {
+    slug: "event-coverage",
+    title: "Event Coverage",
+    description:
+      "Photo and video coverage for tech meetups, conferences, and community events across Abuja.",
+    category: "Visual Media",
+    tools: ["Photography", "Videography", "Premiere Pro"],
+    image: "/projects/placeholder-video.svg",
+    year: "2026",
+  },
+  {
+    slug: "content-reels",
+    title: "Content Reels",
+    description:
+      "Short-form video content — product demos, behind-the-scenes, and social reels for brands.",
+    category: "Visual Media",
+    tools: ["Videography", "Editing", "Storytelling"],
+    image: "/projects/placeholder-reel.svg",
+    year: "2026",
+  },
+
+  // ——— AI & Automation ———
+  {
+    slug: "meetscribe",
+    title: "MeetScribe",
+    description:
+      "Chrome extension that transcribes meetings in real-time using Whisper and summarises with Claude.",
+    category: "AI",
+    tools: ["Chrome Extension", "Whisper", "Claude API", "Manifest V3"],
+    image: "/projects/placeholder-ai.svg",
+    year: "2025",
+    wide: true,
+  },
 ];
 
-/** Projects highlighted on the home page */
-export const featured = projects.slice(0, 3);
+/** Projects highlighted on the home page — one from each world */
+export const featured = [
+  projects.find((p) => p.slug === "definam")!,
+  projects.find((p) => p.slug === "brand-portraits")!,
+  projects.find((p) => p.slug === "meetscribe")!,
+];
