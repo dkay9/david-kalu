@@ -1,0 +1,89 @@
+export interface Project {
+  slug: string;
+  title: string;
+  description: string;
+  category: "Product" | "Client work" | "Open source";
+  tools: string[];
+  /** Screenshot inside /public — e.g. "/projects/definam.png" */
+  image: string;
+  year: string;
+  /** Renders as a wide (2-column) card in the grid */
+  wide?: boolean;
+  /** Optional links — rendered only if present */
+  live?: string;
+  github?: string;
+}
+
+/**
+ * HOW TO ADD PROJECTS
+ * -------------------
+ * 1. Drop a screenshot into  public/projects/  (16:9-ish works best)
+ * 2. Add an entry below. wide: true makes the card span 2 columns.
+ */
+export const projects: Project[] = [
+  {
+    slug: "definam",
+    title: "DefinAm",
+    description:
+      "Ed-tech PWA helping Nigerian secondary students prep for WAEC, NECO & JAMB with structured learning flows and daily recall.",
+    category: "Product",
+    tools: ["Next.js 15", "TypeScript", "Tailwind", "PWA", "Zod"],
+    image: "/projects/definam.svg",
+    year: "2026",
+    wide: true,
+  },
+  {
+    slug: "debategym",
+    title: "DebateGym",
+    description:
+      "AI-powered debate training app with real-time evaluation, voice input and progress history.",
+    category: "Product",
+    tools: ["Next.js", "Prisma", "Supabase", "NextAuth", "Gemini API"],
+    image: "/projects/debategym.svg",
+    year: "2025",
+  },
+  {
+    slug: "noqueue",
+    title: "NoQueue",
+    description:
+      "Campus library reserve-to-pickup PWA with slot locking across multiple schools.",
+    category: "Product",
+    tools: ["Next.js", "FastAPI", "Redis", "PostgreSQL"],
+    image: "/projects/noqueue.svg",
+    year: "2026",
+  },
+  {
+    slug: "velox",
+    title: "VELOX",
+    description:
+      "Luxury automotive brand site with a gear-loader intro and buttery scroll storytelling.",
+    category: "Client work",
+    tools: ["Next.js", "GSAP", "Lenis", "Tailwind"],
+    image: "/projects/velox.svg",
+    year: "2026",
+    wide: true,
+  },
+  {
+    slug: "clientportal",
+    title: "ClientPortal",
+    description:
+      "Freelancer client portal with shareable public project links — used in production by an NGO.",
+    category: "Product",
+    tools: ["Next.js", "TypeScript", "Prisma", "Supabase"],
+    image: "/projects/clientportal.svg",
+    year: "2025",
+  },
+  {
+    slug: "tradebridge",
+    title: "Tradebridge",
+    description:
+      "B2B matchmaking platform connecting Nigerian buyers with verified international suppliers.",
+    category: "Client work",
+    tools: ["Next.js", "Express", "Prisma", "Supabase"],
+    image: "/projects/tradebridge.svg",
+    year: "2025",
+  },
+];
+
+/** Projects highlighted on the home page */
+export const featured = projects.slice(0, 3);
