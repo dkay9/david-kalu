@@ -9,7 +9,7 @@ export default function FeaturedWork() {
     <section className="border-t border-ink px-5 py-20 sm:px-10 lg:px-16 lg:py-28">
       <Reveal className="mb-12 flex flex-wrap items-end justify-between gap-6">
         <div>
-          <p className="timecode mb-3 text-rec">// 02 — selected work</p>
+          <p className="timecode mb-3 text-rec">// 03 — selected work</p>
           <h2 className="display text-5xl sm:text-7xl headline-fade">
             Featured
             <br />

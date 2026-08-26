@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 const stats = [
   { value: "20+", label: "Projects shipped" },
   { value: "7+", label: "Years building" },
-  { value: "10+", label: "Happy clients" },
+  { value: "3", label: "Creative disciplines" },
 ];
 
 export default function About() {
@@ -20,11 +20,12 @@ export default function About() {
           <Reveal delay={100}>
             <p className="timecode mb-4 text-rec">// 01 — who is dk</p>
             <p className="max-w-2xl text-lg leading-relaxed sm:text-xl">
-              DK is a full-stack software engineer and product designer from
-              Abuja, Nigeria — building under the BuildItt studio brand. From
-              ed-tech platforms to client products, the focus is the same:
-              clean architecture, considered design, and shipping things that
-              hold up in production.
+              DK is a creative technologist from Abuja, Nigeria — building
+              under the BuildItt studio brand. Engineer by trade, visual
+              storyteller by instinct, and AI builder by obsession. From
+              full-stack web platforms to brand photography to AI-powered
+              tools, the thread is the same: make things that work beautifully
+              and ship them into the real world.
             </p>
           </Reveal>
 

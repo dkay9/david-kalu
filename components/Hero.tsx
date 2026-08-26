@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-const skills = ["Next.js", "TypeScript", "React", "Node.js", "UI Engineering"];
+const skills = ["Software", "Photography", "Videography", "AI", "Design"];
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
         style={{ animationDelay: "0.1s" }}
       >
         <span className="size-2.5 rounded-full bg-rec animate-blink" />
-        <span className="timecode">// status: open to work — est. 2019</span>
+        <span className="timecode">// creative technologist — est. 2019</span>
       </div>
 
       <div className="grid items-end gap-10 lg:grid-cols-[1fr_auto]">
@@ -22,7 +22,7 @@ export default function Hero() {
             className="hero-clip block headline-fade"
             style={{ animationDelay: "0.2s" }}
           >
-            Design.
+            Create.
           </span>
           <span
             className="hero-clip block outline-text"
@@ -60,17 +60,17 @@ export default function Hero() {
         style={{ animationDelay: "0.85s" }}
       >
         <p className="max-w-xs text-sm leading-relaxed text-smoke sm:max-w-sm">
-          I&apos;m DK — full-stack engineer &amp; product designer. I take
-          products from idea to production: web apps, PWAs and interfaces
-          people actually enjoy using.
+          I&apos;m DK — creative technologist. I engineer software,
+          capture stories through lens and motion, and build with AI.
+          Software · Visual Media · AI.
         </p>
 
         <Link
-          href="/projects"
+          href="#worlds"
           className="group flex items-center gap-4"
-          aria-label="Explore projects"
+          aria-label="Explore what I do"
         >
-          <span className="timecode">See the work</span>
+          <span className="timecode">Explore my worlds</span>
           <span className="flex size-14 items-center justify-center rounded-full border border-ink transition-colors duration-300 group-hover:bg-rec group-hover:border-rec group-hover:text-white">
             <ArrowUpRight size={20} className="arrow-launch" />
           </span>

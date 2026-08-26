@@ -21,9 +21,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DK.DEV — Software Engineer",
+  title: "DK.DEV — Creative Technologist",
   description:
-    "Portfolio of DK — full-stack software engineer & product designer building web apps, PWAs and products that ship.",
+    "Portfolio of DK — creative technologist blending software engineering, visual media, and AI to build products, capture stories, and automate the future.",
 };
 
 /** Runs before hydration so the saved theme applies without a flash */
