@@ -7,14 +7,6 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-dvh flex-col justify-center overflow-hidden px-5 pt-24 pb-16 sm:px-10 lg:px-16 lg:pt-16">
       {/* Status line */}
-      <div
-        className="hero-rise mb-8 flex items-center gap-3"
-        style={{ animationDelay: "0.1s" }}
-      >
-        <span className="size-2.5 rounded-full bg-rec animate-blink" />
-        <span className="timecode">// creative technologist — est. 2019</span>
-      </div>
-
       <div className="grid items-end gap-10 lg:grid-cols-[1fr_auto]">
         {/* Stacked headline */}
         <h1 className="display text-[clamp(3.4rem,13vw,11rem)]">
@@ -60,8 +52,9 @@ export default function Hero() {
         style={{ animationDelay: "0.85s" }}
       >
         <p className="max-w-xs text-sm leading-relaxed text-smoke sm:max-w-sm">
-          I&apos;m DK — creative technologist. I engineer software,
+          I&apos;m DK. A creative technologist. I engineer software,
           capture stories through lens and motion, and build with AI.
+          <br />
           Software · Visual Media · AI.
         </p>
 
