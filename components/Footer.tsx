@@ -17,7 +17,7 @@ export default function Footer() {
       {/* Faint rotated backdrop word */}
       <span
         aria-hidden
-        className="display pointer-events-none absolute -right-6 top-1/2 hidden -translate-y-1/2 vertical-rl text-[10rem] text-paper/[0.05] lg:block"
+        className="display pointer-events-none absolute -right-6 top-1/2 hidden -translate-y-1/2 vertical-rl text-[10rem] text-paper/05 lg:block"
       >
         DK.DEV
       </span>

@@ -9,7 +9,6 @@ import ThemeToggle from "@/components/ThemeToggle";
 const links = [
   { label: "Home", href: "/" },
   { label: "Worlds", href: "/#worlds" },
-  { label: "Work", href: "/projects" },
   { label: "About", href: "/#about" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -46,7 +45,7 @@ export default function Nav() {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`vertical-rl rotate-180 rounded-full border px-2 py-4 text-[10px] tracking-[0.25em] uppercase transition-colors duration-300 ${
+                className={`vertical-rl rotate-180 rounded-full px-2 py-4 text-[10px] tracking-[0.25em] uppercase transition-colors duration-300 ${
                   active
                     ? "border-ink bg-ink text-paper"
                     : "border-line hover:border-ink"
@@ -61,18 +60,11 @@ export default function Nav() {
         <div className="flex flex-col items-center gap-3">
           <ThemeToggle />
           <a
-            href="https://github.com/BuildItt-Inc"
+            href="https://github.com/dkay9"
             aria-label="GitHub"
             className="rounded-full border border-line p-2 transition-colors hover:border-ink hover:bg-ink hover:text-paper"
           >
             <Github size={13} strokeWidth={1.8} />
-          </a>
-          <a
-            href="https://linkedin.com"
-            aria-label="LinkedIn"
-            className="rounded-full border border-line p-2 transition-colors hover:border-ink hover:bg-ink hover:text-paper"
-          >
-            <Linkedin size={13} strokeWidth={1.8} />
           </a>
         </div>
       </aside>
