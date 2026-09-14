@@ -8,7 +8,7 @@ const worlds = [
     title: "Software",
     subtitle: "Engineering",
     description:
-      "Full-stack web apps, PWAs, and interfaces — built with Next.js, TypeScript, and modern tooling.",
+      "Full-stack web apps, PWAs, and interfaces built with modern tooling.",
     href: "/projects?filter=software",
     tags: ["Next.js", "TypeScript", "React", "Node.js", "Prisma"],
   },
@@ -17,7 +17,7 @@ const worlds = [
     title: "Visual",
     subtitle: "Media",
     description:
-      "Photography and videography — capturing stories, brands, and moments through lens and motion.",
+      "Photography and videography. Capturing stories, brands, and moments through lens and motion.",
     href: "/projects?filter=visual",
     tags: ["Photography", "Videography", "Content", "Editing", "Storytelling"],
   },
@@ -39,13 +39,12 @@ export default function Worlds() {
       className="border-t border-ink px-5 py-20 sm:px-10 lg:px-16 lg:py-28"
     >
       <Reveal className="mb-14">
-        <p className="timecode mb-3 text-rec">// 02 — disciplines</p>
         <h2 className="display text-5xl sm:text-7xl">
           Three <span className="outline-text">Worlds</span>
         </h2>
         <p className="mt-4 max-w-lg text-sm leading-relaxed text-smoke">
           Every project lives at the intersection of technology and creativity.
-          Pick a world — or let them collide.
+          Pick a world or let them collide.
         </p>
       </Reveal>
 

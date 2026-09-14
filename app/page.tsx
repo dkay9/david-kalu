@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Worlds from "@/components/Worlds";
 import FeaturedWork from "@/components/FeaturedWork";
@@ -10,10 +9,8 @@ export default function Home() {
   return (
     <main className="lg:pl-16">
       <Hero />
-      <Marquee />
       <About />
       <Worlds />
-      <FeaturedWork />
       <Services />
       <Footer />
     </main>

@@ -18,12 +18,10 @@ export default function About() {
 
         <div>
           <Reveal delay={100}>
-            <p className="timecode mb-4 text-rec">// 01 — who is dk</p>
             <p className="max-w-2xl text-lg leading-relaxed sm:text-xl">
-              DK is a creative technologist from Abuja, Nigeria — building
-              under the BuildItt studio brand. Engineer by trade, visual
+              DK is a creative technologist from Abuja, Nigeria. Engineer by trade, visual
               storyteller by instinct, and AI builder by obsession. From
-              full-stack web platforms to brand photography to AI-powered
+              full-stack web platforms to brand photography and cinematography campaigns to AI-powered
               tools, the thread is the same: make things that work beautifully
               and ship them into the real world.
             </p>
