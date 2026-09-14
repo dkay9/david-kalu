@@ -19,7 +19,7 @@ const worlds = [
     description:
       "Photography and videography. Capturing stories, brands, and moments through lens and motion.",
     href: "/projects?filter=visual",
-    tags: ["Photography", "Videography", "Content", "Editing", "Storytelling"],
+    tags: ["Photography", "Cinematography", "Content Creation", "Editing", "Storytelling"],
   },
   {
     icon: <Bot size={24} strokeWidth={1.5} />,
